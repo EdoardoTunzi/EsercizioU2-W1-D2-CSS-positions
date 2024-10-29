@@ -344,11 +344,12 @@ aside div p:last-child {
   font-size: 0.8em;
   text-align: right;
 }
-
+/*TAG IN ASIDE BOX - POSITION ABSOLUTE*/
 aside div .fa-tag {
   position: absolute;
-  top: 10px;
-  left: 380px;
+  top: 0;
+  right: 0;
+  margin: 10px;
   opacity: 15%;
 }
 
