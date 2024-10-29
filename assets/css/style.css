@@ -124,6 +124,13 @@ h1 {
   margin-bottom: 0.7em;
 }
 
+h1::after {
+  content: url(../img/underline.svg);
+  opacity: 60%;
+  position: relative;
+  top: -25px;
+}
+
 p,
 address,
 ul,
