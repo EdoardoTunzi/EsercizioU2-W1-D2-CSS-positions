@@ -21,9 +21,9 @@ hr {
 header {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
+  left: 15px;
+  right: 15px;
+  z-index: 1;
   background: rgb(0, 160, 198);
   background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
   text-align: center;
@@ -134,13 +134,28 @@ h1 {
   margin-bottom: 0.7em;
 }
 /*SVG LINEA SOTTO H1*/
-h1::after {
+/*h1::after {
   content: url(../img/underline.svg);
   opacity: 60%;
   position: relative;
   top: -25px;
+}*/
+h1 span {
+  position: relative;
+  display: inline-block;
 }
-
+span > img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  width: 100%;
+  opacity: 60%;
+  z-index: 0;
+}
+article img {
+  float: left;
+}
 p,
 address,
 ul,
@@ -351,6 +366,7 @@ aside div .fa-tag {
   right: 0;
   margin: 10px;
   opacity: 15%;
+  font-size: 3.5em;
 }
 /*FIX BUTTONS*/
 .btn-fix {
@@ -448,10 +464,6 @@ footer a {
 /*MEDIAQ PER MEDIUM*/
 
 @media screen and (min-width: 768px) {
-  h1::after {
-    top: -39px;
-  }
-
   /*BLUE BUTTONS*/
   .social-btn {
     position: fixed;
@@ -472,8 +484,13 @@ footer a {
   body {
     padding-top: 110px;
   }
-  h1::after {
-    top: -43px;
-    left: 550px;
+  span > img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    width: 100%;
+    opacity: 60%;
+    z-index: 0;
   }
 }
