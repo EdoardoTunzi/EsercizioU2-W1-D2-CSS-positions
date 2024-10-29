@@ -133,7 +133,7 @@ h1 {
   letter-spacing: -0.03em;
   margin-bottom: 0.7em;
 }
-
+/*SVG LINEA SOTTO H1*/
 h1::after {
   content: url(../img/underline.svg);
   opacity: 60%;
@@ -356,10 +356,11 @@ aside div .fa-tag {
 .btn-fix {
   width: 70px;
   height: 70px;
+  padding: 10px;
+  border: 2px solid #fffefe;
+  border-radius: 10px;
   background-color: white;
   opacity: 60%;
-  border: 4px solid #d3d3d3;
-  border-radius: 10px;
 }
 .blue-btn button {
   color: blue;
@@ -441,5 +442,38 @@ footer a {
   .social,
   .toTop {
     display: none;
+  }
+}
+
+/*MEDIAQ PER MEDIUM*/
+
+@media screen and (min-width: 768px) {
+  h1::after {
+    top: -39px;
+  }
+
+  /*BLUE BUTTONS*/
+  .social-btn {
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    z-index: 1000;
+  }
+
+  .calendar-btn {
+    position: fixed;
+    top: 115px;
+    right: 10px;
+    z-index: 1000;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding-top: 110px;
+  }
+  h1::after {
+    top: -43px;
+    left: 550px;
   }
 }
