@@ -105,13 +105,17 @@ section {
 }
 
 section h2 {
+  position: relative;
+  width: fit-content;
+  font-size: 2rem;
+  text-transform: uppercase;
+  top: -38px;
+  left: 10px;
   text-align: center;
   color: #333;
-  font-size: 1.4rem;
-  margin-bottom: 1.7rem;
-  font-weight: bold;
   background-color: #a3a3a3;
   padding: 0px 1em;
+  box-shadow: 1px 1px 5px 0px #2f2f2f;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -277,6 +281,7 @@ tbody tr:last-of-type {
 }
 
 /* FORM */
+
 input {
   padding: 5px;
   border: 0;
@@ -314,6 +319,7 @@ aside h2 {
   margin-bottom: 1em;
 }
 aside div {
+  position: relative;
   background-color: #e3e3e3;
   border: 1px solid #c3c3c3;
   margin-bottom: 1em;
@@ -331,6 +337,13 @@ aside div p:last-child {
   margin-bottom: 0;
   font-size: 0.8em;
   text-align: right;
+}
+
+aside div .fa-tag {
+  position: absolute;
+  top: 10px;
+  left: 380px;
+  opacity: 15%;
 }
 
 /* FOOTER */
