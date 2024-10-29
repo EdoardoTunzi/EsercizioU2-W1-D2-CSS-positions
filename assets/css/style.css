@@ -6,6 +6,7 @@ body {
   padding: 15px;
   background-image: url("../img/sfondo.png");
   background-position: center center;
+  padding-top: 280px;
 }
 
 * {
@@ -18,6 +19,11 @@ hr {
 
 /* HEADER */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   background: rgb(0, 160, 198);
   background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
   text-align: center;
